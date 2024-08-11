@@ -33,6 +33,7 @@ function M.set_colors()
 	local groups = M.groups
 	local styles = M.styles
 
+	Color.new("base04", "#00212b")
 	Color.new("base03", "#002b36")
 	Color.new("base02", "#073642")
 	Color.new("base01", "#586e75")
@@ -56,7 +57,7 @@ function M.set_colors()
 	Group.new("Hint", colors.cyan)
 
 	if config.background_set and config.background_color == Color.none then
-		config.background_color = colors.base03
+		config.background_color = colors.base04
 	end
 
 	local bg_color = config.background_color
